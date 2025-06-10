@@ -41,7 +41,7 @@ function App() {
       case 'student':
         return <StudentDashboard currentUser={currentUser} />;
       default:
-        return <Navigate to="/login"  />;
+        return <Navigate to="/"  />;
     }
   };
 
@@ -63,7 +63,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/login"
+            path="/"
             element={
               !currentUser ? (
                 <Login onLogin={handleLogin} />
@@ -88,7 +88,7 @@ function App() {
               currentUser ? (
                 getDashboardComponent()
               ) : (
-                <Navigate to="/login"  />
+                <Navigate to="/"  />
               )
             }
           />
