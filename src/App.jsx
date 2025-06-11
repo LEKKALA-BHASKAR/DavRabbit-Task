@@ -8,6 +8,7 @@ import AdminDashboard from './components/AdminDashboard';
 import EmployeeDashboard from './components/EmployeeDashboard';
 import StudentDashboard from './components/StudentDashboard.jsx';
 import NotFound from './Pages/NotFound.jsx';
+import IntroPage from './Pages/IntroPage';
 
 
 function App() {
@@ -62,8 +63,9 @@ function App() {
         {currentUser && <Navigation currentUser={currentUser} onLogout={handleLogout} />}
 
         <Routes>
+          <Route path="/" element={<IntroPage/>}/>
           <Route
-            path="/"
+            path="/login"
             element={
               !currentUser ? (
                 <Login onLogin={handleLogin} />

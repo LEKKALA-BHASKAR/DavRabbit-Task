@@ -9,7 +9,7 @@ const Navigation = ({ currentUser, onLogout }) => {
   const handleLogout = () => {
     clearCurrentUser();
     onLogout();
-    navigate('/');
+    navigate('/login');
   };
 
   const getRoleIcon = (role) => {
