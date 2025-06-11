@@ -202,6 +202,7 @@ export default function IntroPage() {
               </div>
               <span className={`text-xs ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{item.label}</span>
             </button>
+            //lets commit
           ))}
         </div>
       </div>
